@@ -1,0 +1,507 @@
+'Tugas UTS Instrumentasi Sistem Robotika'
+'Faiza Iftinan Darin (42523)
+'Raden Muhammad Faisal Abdul Aziz (43519)' 
+'Septian Eka Prayogi (43525)'
+
+Sub Main
+	EraseTrajectories
+	SetWheelSpeed("0", 0, 0)
+	SetWheelSpeed("1", 0, 0)
+	SetWheelSpeed("2", 0, 0)
+	SetWheelSpeed("3", 0, 0)
+	SetWheelSpeed("Mobot 1", 0, 0)
+	SetWheelSpeed("Mobot 2", 0, 0)
+	SetWheelSpeed("Mobot 3", 0, 0)
+	SetWheelSpeed("Mobot 4", 0, 0)
+	SetWheelSpeed("Mobot 5", 0, 0)
+	SetWheelSpeed("Mobot 6", 0, 0)
+	SetWheelSpeed("Mobot 7", 0, 0)
+	SetWheelSpeed("Mobot 8", 0, 0)
+	SetWheelSpeed("Mobot 9", 0, 0)
+	SetWheelSpeed("Mobot 10", 0, 0)
+	SetWheelSpeed("Mobot 11", 0, 0)
+	SetWheelSpeed("Mobot 12", 0, 0)
+	SetWheelSpeed("Mobot 13", 0, 0)
+	SetWheelSpeed("Mobot 14", 0, 0)
+
+'LAYER0
+	SetTimeStep(0.1)
+	SetMobotPosition("0",3.2, 1.8, 70)
+	SetMobotColor("0", RGB(0,255,255))
+	j = 0
+	Do
+		i = 0
+		Do
+			SetWheelSpeed("0", 2, 3)
+			StepForward
+			i = i+1
+		Loop Until i = 800
+
+		i = 0
+		Do
+			SetWheelSpeed("0", 2, 2)
+			StepForward
+			i = i+1
+		Loop Until i = 50
+
+		i = 0
+		Do
+			SetWheelSpeed("0", 1, 5)
+			StepForward
+			i = i+1
+		Loop Until i = 300
+
+				i = 0
+		Do
+			SetWheelSpeed("0", 4, 5)
+			StepForward
+			i = i+1
+		Loop Until i = 300
+
+		j = j+1
+	Loop Until j = 18
+	SetWheelSpeed("0", 0, 0)
+'LAYER1
+	SetTimeStep(0.1)
+	SetMobotPosition("1",10.5, 9, 70)
+	SetMobotColor("1", RGB(0,255,255))
+	j = 0
+	Do
+		i = 0
+		Do
+			SetWheelSpeed("1", 2, 3)
+			StepForward
+			i = i+1
+		Loop Until i = 800
+
+		i = 0
+		Do
+			SetWheelSpeed("1", 2, 2)
+			StepForward
+			i = i+1
+		Loop Until i = 50
+
+		i = 0
+		Do
+			SetWheelSpeed("1", 1, 5)
+			StepForward
+			i = i+1
+		Loop Until i = 300
+
+				i = 0
+		Do
+			SetWheelSpeed("1", 4, 5)
+			StepForward
+			i = i+1
+		Loop Until i = 300
+
+		j = j+1
+	Loop Until j = 18
+	SetWheelSpeed("1", 0, 0)
+'LAYER2
+	SetTimeStep(0.1)
+	SetMobotPosition("2",3.2, 9, 70)
+	SetMobotColor("2", RGB(0,255,255))
+	j = 0
+	Do
+		i = 0
+		Do
+			SetWheelSpeed("2", 2, 3)
+			StepForward
+			i = i+1
+		Loop Until i = 800
+
+		i = 0
+		Do
+			SetWheelSpeed("2", 2, 2)
+			StepForward
+			i = i+1
+		Loop Until i = 50
+
+		i = 0
+		Do
+			SetWheelSpeed("2", 1, 5)
+			StepForward
+			i = i+1
+		Loop Until i = 300
+
+				i = 0
+		Do
+			SetWheelSpeed("2", 4, 5)
+			StepForward
+			i = i+1
+		Loop Until i = 300
+
+		j = j+1
+	Loop Until j = 18
+	SetWheelSpeed("2", 0, 0)
+'LAYER3
+	SetTimeStep(0.1)
+	SetMobotPosition("3",10.5, 1.8, 70)
+	SetMobotColor("3", RGB(0,255,255))
+	j = 0
+	Do
+		i = 0
+		Do
+			SetWheelSpeed("3", 2, 3)
+			StepForward
+			i = i+1
+		Loop Until i = 800
+
+		i = 0
+		Do
+			SetWheelSpeed("3", 2, 2)
+			StepForward
+			i = i+1
+		Loop Until i = 50
+
+		i = 0
+		Do
+			SetWheelSpeed("3", 1, 5)
+			StepForward
+			i = i+1
+		Loop Until i = 300
+
+				i = 0
+		Do
+			SetWheelSpeed("3", 4, 5)
+			StepForward
+			i = i+1
+		Loop Until i = 300
+
+		j = j+1
+	Loop Until j = 18
+	SetWheelSpeed("3", 0, 0)
+k = 0
+Do
+'LAYER4
+	SetTimeStep(2)
+	SetMobotPosition("0",3.28, 2.4, 70)
+	SetMobotColor("0", RGB(0,0,255))
+	SetMobotPosition("1",10.55, 9.6, 70)
+	SetMobotColor("1", RGB(0,0,255))
+	SetMobotPosition("2",3.28, 9.6, 70)
+	SetMobotColor("2", RGB(0,0,255))
+	SetMobotPosition("3",10.55, 2.4, 70)
+	SetMobotColor("3", RGB(0,0,255))
+	j = 0
+	Do
+		i = 0
+		Do
+			SetWheelSpeed("0", 4.14, 5)
+			SetWheelSpeed("1", 4.14, 5)
+			SetWheelSpeed("2", 4.14, 5)
+			SetWheelSpeed("3", 4.14, 5)
+			StepForward
+			i = i+1
+		Loop Until i = 85
+
+		j = j+1
+	Loop Until j = 4
+	SetWheelSpeed("0", 0, 0)
+	SetWheelSpeed("1", 0, 0)
+	SetWheelSpeed("2", 0, 0)
+	SetWheelSpeed("3", 0, 0)
+'LAYER5
+	SetTimeStep(2)
+	SetMobotPosition("0",2.58, 2.1, 70)
+	SetMobotColor("0", RGB(255,0,0))
+	SetMobotPosition("1",9.85, 9.35, 70)
+	SetMobotColor("1", RGB(255,0,0))
+	SetMobotPosition("2",2.58, 9.35, 70)
+	SetMobotColor("2", RGB(255,0,0))
+	SetMobotPosition("3",9.85, 2.1, 70)
+	SetMobotColor("3", RGB(255,0,0))
+	j = 0
+	Do
+		i = 0
+		Do
+			SetWheelSpeed("0", 2, 3)
+			SetWheelSpeed("1", 2, 3)
+			SetWheelSpeed("2", 2, 3)
+			SetWheelSpeed("3", 2, 3)
+			StepForward
+			i = i+1
+		Loop Until i = 65
+		j = j+1
+	Loop Until j = 4
+	SetWheelSpeed("0", 0, 0)
+	SetWheelSpeed("1", 0, 0)
+	SetWheelSpeed("2", 0, 0)
+	SetWheelSpeed("3", 0, 0)
+
+	k=k+1
+Loop Until k = 2
+'LAYER6
+	SetTimeStep(1)
+	SetMobotPosition("0",2.23, 2.05, 70)
+	SetMobotColor("0", RGB(0,0,255))
+	SetMobotPosition("1",9.5, 9.25, 70)
+	SetMobotColor("1", RGB(0,0,255))
+	SetMobotPosition("2",2.23, 9.25, 70)
+	SetMobotColor("2", RGB(0,0,255))
+	SetMobotPosition("3",9.5, 2.05, 70)
+	SetMobotColor("3", RGB(0,0,255))
+	j = 0
+	Do
+		i = 0
+		Do
+			SetWheelSpeed("0", 2.1, 5)
+			SetWheelSpeed("1", 2.1, 5)
+			SetWheelSpeed("2", 2.1, 5)
+			SetWheelSpeed("3", 2.1, 5)
+			StepForward
+			i = i+1
+		Loop Until i = 200
+		i = 0
+		Do
+			SetWheelSpeed("0", -2.1, -5)
+			SetWheelSpeed("1", -2.1, -5)
+			SetWheelSpeed("2", -2.1, -5)
+			SetWheelSpeed("3", -2.1, -5)
+			StepForward
+			i = i+1
+		Loop Until i = 200
+
+		j = j+1
+	Loop Until j = 2
+	SetWheelSpeed("0", 0, 0)
+	SetWheelSpeed("1", 0, 0)
+	SetWheelSpeed("2", 0, 0)
+	SetWheelSpeed("3", 0, 0)
+'LAYER7
+	SetTimeStep(2)
+	SetMobotPosition("0",2.58, 2.1, 70)
+	SetMobotColor("0", RGB(255,0,0))
+	SetMobotPosition("1",9.85, 9.35, 70)
+	SetMobotColor("1", RGB(255,0,0))
+	SetMobotPosition("2",2.58, 9.35, 70)
+	SetMobotColor("2", RGB(255,0,0))
+	SetMobotPosition("3",9.85, 2.1, 70)
+	SetMobotColor("3", RGB(255,0,0))
+	j = 0
+	Do
+		i = 0
+		Do
+			SetWheelSpeed("0", 2, 3)
+			SetWheelSpeed("1", 2, 3)
+			SetWheelSpeed("2", 2, 3)
+			SetWheelSpeed("3", 2, 3)
+			StepForward
+			i = i+1
+		Loop Until i = 220
+		i = 0
+		Do
+			SetWheelSpeed("0", -2, -3)
+			SetWheelSpeed("1", -2, -3)
+			SetWheelSpeed("2", -2, -3)
+			SetWheelSpeed("3", -2, -3)
+			StepForward
+			i = i+1
+		Loop Until i = 220
+
+		j = j+1
+	Loop Until j = 2
+	SetWheelSpeed("0", 0, 0)
+	SetWheelSpeed("1", 0, 0)
+	SetWheelSpeed("2", 0, 0)
+	SetWheelSpeed("3", 0, 0)
+	SetMobotPosition("0",1, 14, 315)
+	SetMobotPosition("1",1, 16, 135)
+	SetMobotPosition("2",3, 14, 45)
+	SetMobotPosition("3",3, 16, 225)
+
+SetTimeStep (0.1)
+ SetMobotPosition("Mobot 1", 5, 9.4, 80)
+ SetMobotPosition("Mobot 2", 2.25, 4, 230)
+ SetMobotPosition("Mobot 3", 7.2, 4, 50)
+ SetMobotPosition("Mobot 4", 2.8, 4, 130)
+ i = 0
+ Do
+  If (i<350) Then SetWheelSpeed("Mobot 1", 3.5, 2.5)
+  If (i>=350) And (i<510) Then SetWheelSpeed("Mobot 1", 3, 4)
+  If (i>=510) And (i<650) Then SetWheelSpeed("Mobot 1", 2.5, -2.5)
+  If (i>=650) And (i<800) Then SetWheelSpeed("Mobot 1", 5, 3)
+  If (i>=800) And (i<950) Then SetWheelSpeed("Mobot 1", -2.5, 2.5)
+  If (i>=950) And (i<1650) Then SetWheelSpeed("Mobot 1", 3, 4)
+  If (i>=1650) And (i<1850) Then SetWheelSpeed("Mobot 1", 2.5, -2.5)
+  If (i>=1850) And (i<2100) Then SetWheelSpeed("Mobot 1", 5, 4.4)
+  If (i>=2100) And (i<2250) Then SetWheelSpeed("Mobot 1", -2.5, 2.5)
+  If (i>=2250) And (i<2730) Then SetWheelSpeed("Mobot 1", 3.4, 4)
+  If (i>=2730) And (i<2900) Then SetWheelSpeed("Mobot 1", 2.5, -2.5)
+  If (i>=2900) And (i<3090) Then SetWheelSpeed("Mobot 1", 5, 4)
+  If (i>=3090) And (i<3250) Then SetWheelSpeed("Mobot 1", -2.5, 2.5)
+  If (i>=3250) And (i<3700) Then SetWheelSpeed("Mobot 1", 3.4, 4)
+  If (i>=3700) And (i<3870) Then SetWheelSpeed("Mobot 1", 2.5, -2.5)
+  If (i>=3870) And (i<3990) Then SetWheelSpeed("Mobot 1", 5, 4)
+  If (i>=3990) And (i<4150) Then SetWheelSpeed("Mobot 1", -2.5, 2.5)
+  If (i>=4150) And (i<4500) Then SetWheelSpeed("Mobot 1", 3.3, 4)
+  If (i>=4500) And (i<4550) Then SetWheelSpeed("Mobot 1", 5, 5)
+  If (i>=4550) Then SetWheelSpeed("Mobot 1", 0, 0)
+
+  If (i<50) Then SetWheelSpeed("Mobot 2", 5, 5)
+  If (i>=50) And (i<400) Then SetWheelSpeed("Mobot 2", 3.3, 4)
+  If (i>=400) And (i<560) Then SetWheelSpeed("Mobot 2", -2.5, 2.5)
+  If (i>=560) And (i<680) Then SetWheelSpeed("Mobot 2", 5, 4)
+  If (i>=680) And (i<850) Then SetWheelSpeed("Mobot 2", 2.5, -2.5)
+  If (i>=850) And (i<1300) Then SetWheelSpeed("Mobot 2", 3.4, 4)
+  If (i>=1300) And (i<1460) Then SetWheelSpeed("Mobot 2", -2.5, 2.5)
+  If (i>=1460) And (i<1650) Then SetWheelSpeed("Mobot 2", 5, 4)
+  If (i>=1650) And (i<1820) Then SetWheelSpeed("Mobot 2", 2.5, -2.5)
+  If (i>=1820) And (i<2300) Then SetWheelSpeed("Mobot 2", 3.4, 4)
+  If (i>=2300) And (i<2450) Then SetWheelSpeed("Mobot 2", -2.5, 2.5)
+  If (i>=2450) And (i<2700) Then SetWheelSpeed("Mobot 2", 5, 4.4)
+  If (i>=2700) And (i<2900) Then SetWheelSpeed("Mobot 2", 2.5, -2.5)
+  If (i>=2900) And (i<3600) Then SetWheelSpeed("Mobot 2", 3, 4)
+  If (i>=3600) And (i<3750) Then SetWheelSpeed("Mobot 2", -2.5, 2.5)
+  If (i>=3750) And (i<3900) Then SetWheelSpeed("Mobot 2", 5, 3)
+  If (i>=3900) And (i<4040) Then SetWheelSpeed("Mobot 2", 2.5, -2.5)
+  If (i>=4040) And (i<4200) Then SetWheelSpeed("Mobot 2", 3, 4)
+  If (i>=4200) And (i<4550) Then SetWheelSpeed("Mobot 2", 3.5, 2.5)
+  If (i>=4550) Then SetWheelSpeed("Mobot 2", 0, 0)
+
+  If (i<300) Then SetWheelSpeed("Mobot 3", 2.8, 5)
+  If (i>=300) And (i<400) Then SetWheelSpeed("Mobot 3", -2.5, 2.5)
+  If (i>=400) And (i<550) Then SetWheelSpeed("Mobot 3", 5, 2.8)
+  If (i>=550) And (i<670) Then SetWheelSpeed("Mobot 3", 2.5, -2.5)
+  If (i>=670) And (i<850) Then SetWheelSpeed("Mobot 3", 3.9, 4)
+  If (i>=850) And (i<1170) Then SetWheelSpeed("Mobot 3", 3.3, 5)
+  If (i>=1170) And (i<1330) Then SetWheelSpeed("Mobot 3", 2.5, -2.5)
+  If (i>=1330) And (i<1410) Then SetWheelSpeed("Mobot 3", 3, 3)
+  If (i>=1410) And (i<1560) Then SetWheelSpeed("Mobot 3", 4.5, 3)
+  If (i>=1560) And (i<1750) Then SetWheelSpeed("Mobot 3", -2.5, 2.5)
+  If (i>=1750) And (i<1930) Then SetWheelSpeed("Mobot 3", 3, 4.5)
+  If (i>=1930) And (i<2050) Then SetWheelSpeed("Mobot 3", 2.5, -2.5)
+  If (i>=2050) And (i<2200) Then SetWheelSpeed("Mobot 3", 3, 4.5)
+  If (i>=2200) Then SetWheelSpeed("Mobot 3", 0, 0)
+
+  If (i<300) Then SetWheelSpeed("Mobot 4", 5, 2.8)
+  If (i>=300) And (i<400) Then SetWheelSpeed("Mobot 4", 2.5, -2.5)
+  If (i>=400) And (i<550) Then SetWheelSpeed("Mobot 4", 2.8, 5)
+  If (i>=550) And (i<670) Then SetWheelSpeed("Mobot 4", -2.5, 2.5)
+  If (i>=670) And (i<850) Then SetWheelSpeed("Mobot 4", 4, 3.9)
+  If (i>=850) And (i<1170) Then SetWheelSpeed("Mobot 4", 5, 3.3)
+  If (i>=1170) And (i<1330) Then SetWheelSpeed("Mobot 4", -2.5, 2.5)
+  If (i>=1330) And (i<1410) Then SetWheelSpeed("Mobot 4", 3, 3)
+  If (i>=1410) And (i<1560) Then SetWheelSpeed("Mobot 4", 3, 4.5)
+  If (i>=1560) And (i<1750) Then SetWheelSpeed("Mobot 4", 2.5, -2.5)
+  If (i>=1750) And (i<1930) Then SetWheelSpeed("Mobot 4", 4.5, 3)
+  If (i>=1930) And (i<2050) Then SetWheelSpeed("Mobot 4", -2.5, 2.5)
+  If (i>=2050) And (i<2200) Then SetWheelSpeed("Mobot 4", 4.5, 3)
+  If (i>=2200) Then SetWheelSpeed("Mobot 4", 0, 0)
+
+  i = i+1
+  StepForward
+  Loop Until (i=5000)
+
+ SetMobotPosition("Mobot 5", 3, 5, 270)
+ SetMobotPosition("Mobot 6", 7, 5, 270)
+ SetMobotPosition("Mobot 7", 8, 3.5, 90)
+ SetMobotPosition("Mobot 8", 2, 3.5, 90)
+ SetMobotPosition("Mobot 9", 5.67, 1.75, 25)
+ SetMobotPosition("Mobot 10", 4.35, 1.75, 155)
+ i = 0
+ Do
+  If (i<300) Then SetWheelSpeed("Mobot 5", 2.5, 3.5)
+  If (i>=300) And (i<400) Then SetWheelSpeed("Mobot 5", 3, 3)
+  If (i>=400) And (i<700) Then SetWheelSpeed("Mobot 5", 3.5, 2.5)
+  If (i>=700) And (i<750) Then SetWheelSpeed("Mobot 5", 3, 3)
+  If (i>=750) And (i<850) Then SetWheelSpeed("Mobot 5", -2.3, 2.5)
+  If (i>=850) And (i<1100) Then SetWheelSpeed("Mobot 5", 2.3, 2.5)
+  If (i>=1100) Then SetWheelSpeed("Mobot 5", 0, 0)
+
+
+  If (i<300) Then SetWheelSpeed("Mobot 6", 3.5, 2.5)
+  If (i>=300) And (i<400) Then SetWheelSpeed("Mobot 6", 3, 3)
+  If (i>=400) And (i<700) Then SetWheelSpeed("Mobot 6", 2.5, 3.5)
+  If (i>=700) And (i<750) Then SetWheelSpeed("Mobot 6", 3, 3)
+  If (i>=750) And (i<850) Then SetWheelSpeed("Mobot 6", 2.5, -2.3)
+  If (i>=850) And (i<1100) Then SetWheelSpeed("Mobot 6", 2.5, 2.3)
+  If (i>=1100) Then SetWheelSpeed("Mobot 6", 0, 0)
+
+  If (i<300) Then SetWheelSpeed("Mobot 7", 2.5, 4)
+  If (i>=300) And (i<420) Then SetWheelSpeed("Mobot 7", 2.5, -2.5)
+  If (i>=420) And (i<750) Then SetWheelSpeed("Mobot 7", 4.5, 2.5)
+  If (i>=750) And (i<770) Then SetWheelSpeed("Mobot 7", 2.5, -2.5)
+  If (i>=770) And (i<1080) Then SetWheelSpeed("Mobot 7", 4.5, 2.5)
+  If (i>=1080) Then SetWheelSpeed("Mobot 7", 0, 0)
+
+  If (i<300) Then SetWheelSpeed("Mobot 8", 4, 2.5)
+  If (i>=300) And (i<420) Then SetWheelSpeed("Mobot 8", -2.5, 2.5)
+  If (i>=420) And (i<750) Then SetWheelSpeed("Mobot 8", 2.5, 4.5)
+  If (i>=750) And (i<770) Then SetWheelSpeed("Mobot 8", -2.5, 2.5)
+  If (i>=770) And (i<1080) Then SetWheelSpeed("Mobot 8", 2.5, 4.5)
+  If (i>=1080) Then SetWheelSpeed("Mobot 8", 0, 0)
+
+  If (i<450) Then SetWheelSpeed("Mobot 9", 4, 3.5)
+  If (i>=450) And (i<600) Then SetWheelSpeed("Mobot 9", 5, 3)
+  If (i>=600) And (i<690) Then SetWheelSpeed("Mobot 9", 5, -5)
+  If (i>=690) And (i<700) Then SetWheelSpeed("Mobot 9", 2, 5)
+  If (i>=700) And (i<1080) Then SetWheelSpeed("Mobot 9", 2, 3)
+  If (i>=1080) And (i<1250) Then SetWheelSpeed("Mobot 9", -2.5, 2.5)
+  If (i>=1250) And (i<1700) Then SetWheelSpeed("Mobot 9", 3.5, 3)
+  If (i>=1700) Then SetWheelSpeed("Mobot 9", 0, 0)
+
+  If (i<450) Then SetWheelSpeed("Mobot 10", 3.5, 4)
+  If (i>=450) And (i<600) Then SetWheelSpeed("Mobot 10", 3, 5)
+  If (i>=600) And (i<690) Then SetWheelSpeed("Mobot 10", -5, 5)
+  If (i>=690) And (i<700) Then SetWheelSpeed("Mobot 10", 5, 2)
+  If (i>=700) And (i<1080) Then SetWheelSpeed("Mobot 10", 3, 2)
+  If (i>=1080) And (i<1250) Then SetWheelSpeed("Mobot 10", 2.5, -2.5)
+  If (i>=1250) And (i<1700) Then SetWheelSpeed("Mobot 10", 3, 3.5)
+  If (i>=1700) Then SetWheelSpeed("Mobot 10", 0, 0)
+
+  i = i+1
+  StepForward
+  Loop Until (i=1800)
+ SetMobotPosition("Mobot 11", 4.5, 4.8, 100)
+ SetMobotPosition("Mobot 12", 5.5, 4.8, 80)
+ SetMobotPosition("Mobot 13", 4.2, 6.5, 45)
+ SetMobotPosition("Mobot 14", 5, 5.65, 45)
+ i = 0
+ Do
+  If (i<250) Then SetWheelSpeed("Mobot 11", 2, 2)
+  If (i>=250) And (i<450) Then SetWheelSpeed("Mobot 11", 3, 7)
+  If (i>=450) And (i<530) Then SetWheelSpeed("Mobot 11", -2.5, 2.5)
+  If (i>=530) And (i<700) Then SetWheelSpeed("Mobot 11", 3, 6)
+  If (i>=700) Then SetWheelSpeed("Mobot 11", 0, 0)
+
+  If (i<250) Then SetWheelSpeed("Mobot 12", 2, 2)
+  If (i>=250) And (i<450) Then SetWheelSpeed("Mobot 12", 7, 3)
+  If (i>=450) And (i<530) Then SetWheelSpeed("Mobot 12", 2.5, -2.5)
+  If (i>=530) And (i<700) Then SetWheelSpeed("Mobot 12", 6, 3)
+  If (i>=700) Then SetWheelSpeed("Mobot 12", 0, 0)
+
+  If (i<250) Then SetWheelSpeed("Mobot 13", 2, 2)
+  If (i>=250) And (i<400) Then SetWheelSpeed("Mobot 13", 4, 3)
+  If (i>=400) And (i<440) Then SetWheelSpeed("Mobot 13", 2, -2)
+  If (i>=440) And (i<590) Then SetWheelSpeed("Mobot 13", 4, 3)
+  If (i>=590) And (i<840) Then SetWheelSpeed("Mobot 13",2, 2)
+  If (i>=840) Then SetWheelSpeed("Mobot 13", 0, 0)
+
+  If (i<350) Then SetWheelSpeed("Mobot 14", 2, 2)
+  If (i>=350) And (i<550) Then SetWheelSpeed("Mobot 14", -2, 2)
+  If (i>=550) And (i<1100) Then SetWheelSpeed("Mobot 14", 2, 2)
+  If (i>=1100) And (i<1300) Then SetWheelSpeed("Mobot 14", -2, 2)
+  If (i>=1300) And (i<1650) Then SetWheelSpeed("Mobot 14",2, 2)
+  If (i>=1650) Then SetWheelSpeed("Mobot 14", 0, 0)
+    i = i+1
+  StepForward
+  Loop Until (i=1700)
+
+ SetMobotPosition("Mobot 1", 5, 14, 80)
+ SetMobotPosition("Mobot 2", 5, 16, 230)
+ SetMobotPosition("Mobot 3", 7, 14, 50)
+ SetMobotPosition("Mobot 4", 7, 16, 130)
+ SetMobotPosition("Mobot 5", 9, 14, 270)
+ SetMobotPosition("Mobot 6", 9, 16, 270)
+ SetMobotPosition("Mobot 7", 11, 14, 90)
+ SetMobotPosition("Mobot 8", 11, 16, 90)
+ SetMobotPosition("Mobot 9", 13, 14, 25)
+ SetMobotPosition("Mobot 10", 13, 16, 155)
+ SetMobotPosition("Mobot 11", 15, 14, 100)
+ SetMobotPosition("Mobot 12", 15, 16, 80)
+ SetMobotPosition("Mobot 13", 13, 11, 45)
+ SetMobotPosition("Mobot 14", 15, 11, 45)
+
+End Sub
